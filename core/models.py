@@ -11,7 +11,7 @@ class Testimonial(models.Model):
 
 
 class About(models.Model):
-    title = models.CharField(default="About us")
+    title = models.CharField(max_length=100, default="About us")
     body = models.TextField()
 
     def __str__(self):
