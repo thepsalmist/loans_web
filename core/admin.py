@@ -16,3 +16,6 @@ class ContactAdmin(admin.ModelAdmin):
 @admin.register(Faq)
 class FaqAdmin(admin.ModelAdmin):
     list_display = ["title", "body"]
+
+
+admin.site.register(About)
