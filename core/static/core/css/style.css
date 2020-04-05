@@ -1,19 +1,9 @@
 /*----------------------------------------------------
-@File: Default Styles
-@Author: Rocky Ahmed
-@URL: http://wethemez.com
-Author E-mail: rockybd1995@gmail.com
 
 This file contains the styling for the actual theme, this
 is the file you need to edit to change the look of the
 theme.
----------------------------------------------------- */
-/*=====================================================================
-@Template Name: Express
-@Author: Rocky Ahmed
-@Developed By: Rocky Ahmed
-@Developer URL: http://rocky.wethemez.com
-Author E-mail: rockybd1995@gmail.com
+
 
 @Default Styles
 
@@ -42,8 +32,7 @@ Table of Content:
 /*----------------------------------------------------*/
 /*font Variables*/
 /*Color Variables*/
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900|Montserrat:200,300,400,400i,500,500i,600,700,800,900|Open+Sans:300,400,400i,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
 .col-md-offset-right-1 {
   margin-right: 8.33333333%;
 }
@@ -147,6 +136,7 @@ i:before {
 
 .section_title {
   padding-bottom: 45px;
+  
 }
 
 .section_title h2 {
@@ -1771,11 +1761,8 @@ i:before {
   position: relative;
 }
 
-.service_item .media .media-left img + img {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
+.service_item .media .media-left i{
+  color: #fc9206;
 }
 
 .service_item .media .media-body h4 {
@@ -1803,7 +1790,7 @@ i:before {
 }
 
 .service_item:hover {
-  background: #205081;
+  background: #0c293a;
   -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.38);
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.38);
 }
@@ -2078,7 +2065,7 @@ i:before {
 /* Testimonials area css
 ============================================================================================ */
 .testimonials_area {
-  background: #205081;
+  background: #fc9206;
   padding: 100px 0px;
 }
 
@@ -2097,7 +2084,7 @@ i:before {
 }
 
 .testimonials_slider .item .media .media-left i {
-  color: #fc9206;
+  color: #0c293a;
   font-size: 100px;
   font-weight: bold;
   line-height: 100px;
@@ -2108,11 +2095,11 @@ i:before {
 }
 
 .testimonials_slider .item .media .media-body p {
-  font-size: 22px;
+  font-size: 16px;
   font-family: "Lato", sans-serif;
   line-height: 35px;
   letter-spacing: .66px;
-  color: #fff;
+  color: #0c293a;
   font-style: italic;
 }
 
@@ -2122,7 +2109,7 @@ i:before {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .54px;
-  color: #fff;
+  color: #0c293a;
   padding-top: 45px;
   padding-bottom: 10px;
 }
@@ -2132,7 +2119,7 @@ i:before {
   font-family: "Lato", sans-serif;
   letter-spacing: .54px;
   font-style: italic;
-  color: #849bb3;
+  color: #0c293a;
 }
 
 .testimonials_slider .owl-dots {
@@ -2144,7 +2131,7 @@ i:before {
 .testimonials_slider .owl-dots .owl-dot {
   height: 10px;
   width: 10px;
-  border: 1px solid #92a5b7;
+  border: 1px solid #fff;
   border-radius: 50%;
   display: inline-block;
   margin-right: 8px;
@@ -2155,7 +2142,7 @@ i:before {
 }
 
 .testimonials_slider .owl-dots .owl-dot.active {
-  background: #fc9206;
+  background: #0c293a;
 }
 
 /* End Testimonials area css
@@ -2707,7 +2694,7 @@ i:before {
 /* Get In Consultation Area css
 ============================================================================================ */
 .get_consult_area {
-  background: #fc9206;
+  background: #0c293a;
   padding: 29px 0px;
 }
 
@@ -2920,7 +2907,7 @@ i:before {
 /* Request Call Back Area css
 ============================================================================================ */
 .request_call_back_area {
-  background: #eeeeee;
+  background: #fff;
   padding: 100px 0px;
 }
 
@@ -4593,6 +4580,7 @@ i:before {
   border-radius: 0px;
   border-color: #d1d1d1;
   margin-top: 20px;
+  
 }
 
 .panel-group.faq_panel .panel-default .panel-heading {
@@ -4678,6 +4666,9 @@ i:before {
   letter-spacing: .34px;
 }
 
+.faq{
+  margin-top: 20px;
+}
 /* End Company Overview Area css
 ============================================================================================ */
 /* Case Study Area css
@@ -5782,7 +5773,7 @@ i:before {
 /* Video Area css
 ============================================================================================ */
 .video_business_area {
-  background: #205081;
+  background: #0c293a;
   padding: 100px 0px;
 }
 

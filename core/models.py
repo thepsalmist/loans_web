@@ -4,6 +4,7 @@ from django.db import models
 class Testimonial(models.Model):
     client_name = models.CharField(max_length=100)
     client_title = models.CharField(max_length=100)
+    image = models.ImageField(default="thumbnail.png", upload_to="Images")
     message = models.TextField()
 
     def __str__(self):
