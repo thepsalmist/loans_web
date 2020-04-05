@@ -181,14 +181,14 @@
                             <h4 class="panel-title">
                                 <a role="button" data-toggle="collapse" data-parent="#faq_acc" href="#c_faq"
                                     aria-expanded="true" aria-controls="c_faq">
-                                    {faq.title}
+                                    {{faq.title}}
                                     <i class="fa fa-caret-right" aria-hidden="true"></i>
                                 </a>
                             </h4>
                         </div>
                         <div id="c_faq" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="h_faq">
                             <div class="panel-body">
-                                {faq.body}
+                                {{faq.body}}
                             </div>
                         </div>
                     </div>
@@ -208,54 +208,21 @@
             <h2>Client Testimonials</h2>
         </div>
         <div class="testimonials_slider owl-carousel">
+            {% for client in testimonials %}
             <div class="item">
                 <div class="media">
                     <div class="media-left">
-                        <img src="img/testimonials/testimonials-1.png" alt="">
+                        <img src="{{client.image.url}}" alt="">
                         <i>“</i>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal
-                            suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec odio
-                            ipsum. Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse
-                            cursus suada faci lisis.</p>
-                        <h4>- Brian B</h4>
-                        <h5>Trader Nairobi</h5>
+                        <p>{{client.message}}</p>
+                        <h4>- {{client.client_name}}</h4>
+                        <h5>{{client.client_title}}</h5>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="media">
-                    <div class="media-left">
-                        <img src="img/testimonials/testimonials-1.png" alt="">
-                        <i>“</i>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal
-                            suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec odio
-                            ipsum. Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse
-                            cursus suada faci lisis.</p>
-                        <h4>- Mary M</h4>
-                        <h5>Salesperson Mawingu</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="media">
-                    <div class="media-left">
-                        <img src="img/testimonials/testimonials-1.png" alt="">
-                        <i>“</i>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus mal
-                            suada faci lisis. Lorem ipsum dolor sit ametion consectetur elit. Vesti bulum nec odio
-                            ipsum. Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse
-                            cursus suada faci lisis.</p>
-                        <h4>- John Krop</h4>
-                        <h5>Driver NTK Sacco</h5>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -270,6 +237,7 @@
         </div>
         <div class="row">
             <form class="call_back_contact" action="" method="post" id="contactForm" novalidate="novalidate">
+                {% csrf_token %}
                 <div class="form-group col-md-4">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
