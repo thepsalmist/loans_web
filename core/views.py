@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
+
 
 from .models import About, Testimonial, Faq, Contact
 from .forms import ContactForm
@@ -14,8 +15,8 @@ def home(request):
             name = form.cleaned_data.get("name")
             messages.success(request, f"Thank you {name} for contacting us")
             return redirect("core:home")
-        else:
-            form = ContactForm()
+    else:
+        form = ContactForm()
 
     context = {
         "testimonials": testimonials,
