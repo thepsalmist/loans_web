@@ -12,6 +12,7 @@ def home(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
         if form.is_valid():
+            form.save()
             name = form.cleaned_data.get("name")
             messages.success(request, f"Thank you {name} for contacting us")
             return redirect("core:home")
