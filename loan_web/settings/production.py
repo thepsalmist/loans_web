@@ -2,7 +2,7 @@ from .base import *
 
 DEBUG = config("DEBUG", cast=bool)
 
-ALLOWED_HOSTS = ["209.97.140.84", "www.myhost.com"]
+ALLOWED_HOSTS = ["209.97.140.84", "www.pesapointfinserve.com", "pesapointfinserve.com"]
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

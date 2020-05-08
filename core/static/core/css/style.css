@@ -846,7 +846,7 @@ i:before {
 }
 
 .header_contact_content .header_contact_logo .pull-right .media {
-  margin-top: 0px;
+  margin-top: 20px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -888,6 +888,7 @@ i:before {
 .header_contact_content .header_contact_logo .pull-right .green_submit_btn {
   vertical-align: top;
   margin-left: 45px;
+  margin-top: 20px;
 }
 
 .header_contact_content.header_black_menu_area .header_contact_logo .header_logo_inner {
@@ -3987,7 +3988,6 @@ i:before {
 /* Consult Policy Area css
 ============================================================================================ */
 .consult_policy_area {
-  background: url(../img/consult-bg.jpg) no-repeat scroll center center;
   background-size: cover;
   position: relative;
   z-index: 2;

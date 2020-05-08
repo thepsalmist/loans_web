@@ -1,3 +1,4 @@
+{% load static %}
 <!--================Footer Area =================-->
 <footer class="footer_area">
     <div class="footer_widget">
@@ -5,7 +6,7 @@
             <div class="row">
                 <div class="col-md-4 col-xs-6">
                     <aside class="f_widget about_widget">
-                        <img src="img/logo.png" alt="">
+                        <img src="{% static 'core/img/kopakash.png' %}" alt="Pesapoint">
                         <p>Lorem ipsum dolor sit amet, consec-tet ur adipiscing elit, sed do iusmod tempor incididunt ut
                             labore et.</p>
                         <a class="f_r_link" href="#">Read More <i class="fa fa-angle-double-right"
@@ -29,7 +30,7 @@
                             <li><a href="#about">- About Us</a></li>
                             <li><a href="#faq">- Faq’s</a></li>
                             <li><a href="#">- Terms of service</a></li>
-                            <li><a href="#">- Privacy Policy</a></li>
+                            <li><a href="{% url 'core:privacy' %}">- Privacy Policy</a></li>
                         </ul>
                     </aside>
                 </div>
@@ -44,8 +45,8 @@
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                 </div>
                                 <div class="media-body">
-                                    <h4>Loan App</h4>
-                                    <p>54B, Nairobi, Utawala</p>
+                                    <h4>Kopakash</h4>
+                                    <p>54B, Nairobi, Kenya</p>
                                 </div>
                             </div>
                             <div class="media">
@@ -61,7 +62,7 @@
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </div>
                                 <div class="media-body">
-                                    <a href="#">info@loanapp.com</a>
+                                    <a href="#">info@lpesapointfinserve.com</a>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +75,7 @@
         <div class="container">
             <div class="footer_copyright_inner">
                 <div class="pull-left">
-                    <p>Copyright © LoanApp
+                    <p>Copyright © Kopakash
                         <script>document.write(new Date().getFullYear());</script>. All rights reserved. </p>
                 </div>
                 <div class="pull-right">

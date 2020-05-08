@@ -376,7 +376,7 @@
     .white_logo{
         display: block;
         padding-left: 20px;
-        padding-top: 8px;
+        padding-top: 2px;
     }
     .middle_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li {
         margin-left: 20px;
@@ -1000,9 +1000,9 @@
     }
     .white_logo {
         width: 60%;
-        padding-top: 17px;
+        padding-top: 2px;
     }
     .white_logo img{
-        width: 100%;
+        width: auto;
     }
 }

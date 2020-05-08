@@ -26,3 +26,7 @@ def home(request):
     }
 
     return render(request, "core/index.html", context)
+
+
+def privacy(request):
+    return render(request, "core/privacy.html", context={})
